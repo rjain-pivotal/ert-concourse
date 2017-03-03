@@ -93,6 +93,7 @@ fn_om_linux_curl "PUT" "/api/v0/staged/products/${guid_cf}/networks_and_azs" "${
 # Set ERT Properties
 echo "=============================================================================================="
 echo "Setting Properties for: ${guid_cf}"
+echo "Properties are ${json_properties}"
 echo "=============================================================================================="
 
 json_properties=$(cat ${json_file} | jq .properties)
